@@ -1,0 +1,15 @@
+@import '../../../global-styles.css';
+
+.navBarWrapper {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.userMenu {
+  position: absolute;
+  right: 3rem;
+}

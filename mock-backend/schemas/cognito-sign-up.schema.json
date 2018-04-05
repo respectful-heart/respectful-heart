@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CognitoAuthToken",
+  "type": "object",
+  "properties": {
+    "UserConfirmed": "boolean",
+    "CodeDeliveryDetails": {
+      "type": "object",
+      "properties": {
+        "Destination": {
+          "type": "string",
+          "pattern": "\\+\\*{7}\\d{4}"
+        },
+        "DeliveryMedium": {
+          "type": "string"
+        },
+        "AttributeName": {
+          "type": "string"
+        }
+      },
+      "required": [ "Destination", "DeliveryMedium", "AttributeName" ]
+    },
+    "UserSub": {
+      "type": {
+        "$ref": "uuidSchema"
+      }
+    }
+  },
+  "required": [ "UserConfirmed", "CodeDeliveryDetails", "UserSub"]
+}

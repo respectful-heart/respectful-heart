@@ -1,0 +1,11 @@
+@import '../global-styles';
+
+body {
+  font-family: var(--font-body);
+}
+
+.appRoot {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

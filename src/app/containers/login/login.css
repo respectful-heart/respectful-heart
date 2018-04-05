@@ -1,0 +1,16 @@
+@import '../../../global-styles';
+
+.login {
+  @apply --main-style;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formGroup {
+  width: 30vw;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CognitoAuthToken",
+  "type": "object",
+  "definitions": {
+    "accessTokenPayload": {
+      "type": "object",
+      "properties": {
+        "sub": {
+          "type": "string"
+        },
+        "event_id": {
+          "type": "string"
+        },
+        "token_use": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "auth_time": {
+          "type": "number"
+        },
+        "iss": {
+          "type": "string"
+        },
+        "exp": {
+          "type": "number"
+        },
+        "iat": {
+          "type": "number"
+        },
+        "jti": {
+          "$ref": "uuidSchema"
+        },
+        "client_id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sub",
+        "event_id",
+        "token_use",
+        "scope",
+        "auth_time",
+        "iss",
+        "exp",
+        "iat",
+        "jti",
+        "client_id",
+        "username"
+      ]
+    }
+  },
+  "properties": {
+    "refreshToken": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "pattern": "[A-Za-z0-9-_]{1750}"
+        }
+      },
+      "required": [ "token" ]
+    },
+    "accessToken": {
+      "type": "object",
+      "properties": {
+        "jwtToken": {
+          "type": "string",
+          "pattern": "[A-Za-z0-9-_]{975}"
+        },
+        "payload": {
+          "$ref": "#/definitions/accessTokenPayload"
+        }
+      },
+      "required": [ "jwtToken", "payload" ]
+    }
+  },
+  "required": [ "refreshToken", "accessToken" ]
+}
