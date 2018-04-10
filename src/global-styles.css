@@ -6,10 +6,4 @@
 
   --color-white: #fff;
   --color-black: #000;
-
-  --main-style {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-  }
 }

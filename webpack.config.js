@@ -23,10 +23,11 @@ module.exports = {
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
+      enforce: 'pre',
       use: [{
         loader: 'babel-loader',
         options: {
-          presets: [ 'react', 'flow' ],
+          presets: [ 'env', 'react', 'flow' ],
           plugins: [ 'transform-class-properties' ]
         }
       }]
