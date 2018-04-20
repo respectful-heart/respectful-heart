@@ -1,0 +1,91 @@
+.calendar {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.changeMonth {
+  border: none;
+  cursor: pointer;
+}
+
+.week {
+    display: flex;
+}
+
+.dayName {
+  text-transform: capitalize;
+  color: #888;
+  margin: 1rem;
+  text-align: center;
+  width: 2rem;
+}
+
+.monthDay {
+  text-align: center;
+  margin: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  line-height: 3rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.monthDay:hover {
+  background-color: #ddd;
+}
+
+.monthDayBooked {
+  background-color: blue;
+  color: #fff;
+}
+
+.monthDaySelected {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.monthDayEmpty {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  border: none;
+}
+
+.day {
+  margin: 0 1rem 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateString {
+  font-size: 1rem;
+}
+
+.appt {
+  display: block;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  text-align: center;
+  width: 8rem;
+  margin: 0.5rem 0;
+  color: #aaa
+}
+
+.apptOpen {
+  color: #000;
+  border-color: #aaa;
+  cursor: pointer;
+}
+
+.apptSelected {
+  border-color: blue;
+  color: blue;
+}

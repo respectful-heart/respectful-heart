@@ -1,9 +1,11 @@
+
+
 :root {
   @import url('https://fonts.googleapis.com/css?family=Rubik|Taviraj');
 
   --font-title: 'Taviraj', serif;
   --font-body: 'Rubik', sans-serif;
 
-  --color-white: #fff;
-  --color-black: #000;
+  --color-text-light: #fff;
+  --color-text-dark: #000;
 }

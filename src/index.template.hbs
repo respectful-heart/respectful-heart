@@ -5,7 +5,8 @@
     <title>{{htmlWebpackPlugin.options.title}}</title>
     {{#each htmlWebpackPlugin.options.cdnResources.css}}
       <link rel="stylesheet" href="{{ this.href }}" integrity="{{ this.integrity }}" crossorigin="{{ this.crossorigin }}">
-    {{/each}} 
+    {{/each}}
+    <base href="/">
 </head>
 
 <body id="home">

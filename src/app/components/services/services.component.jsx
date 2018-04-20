@@ -6,13 +6,14 @@ import { connectRoute } from 'utils/router-config'
 import type { RouteModel } from 'models'
 
 const route: RouteModel = {
-  name: 'About',
-  path: '/about',
-  order: 1
+  name: 'Services',
+  path: '/services',
+  order: 2,
+  open: true
 }
 
-function About () {
-  return <main style={{ marginTop: '100px' }}>About</main>
+function Services () {
+  return <div>Services</div>
 }
 
-export default connectRoute(route)(About)
+export default connectRoute(route)(Services)

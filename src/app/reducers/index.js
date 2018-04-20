@@ -2,10 +2,12 @@
 
 import { combineReducers } from 'redux'
 
-import { genericReducer } from './generic.reducer'
+import { userReducer } from './user.reducer'
+import { scheduleReducer } from './schedule.reducer'
 
 const reducers = {
-  generic: genericReducer
+  user: userReducer,
+  schedule: scheduleReducer
 }
 
 type ExtractReturnType = <ReducerReturn>(v: (...args: any) => ReducerReturn) => ReducerReturn
