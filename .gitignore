@@ -5,3 +5,4 @@ flow-coverage
 yarn-error.log
 npm-error.log
 build
+package-lock.json

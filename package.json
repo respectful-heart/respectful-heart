@@ -87,6 +87,7 @@
   },
   "echelon": {
     "build": "npm run build",
-    "publicContent": "./build"
+    "publicContent": "./build",
+    "acl": "public-read"
   }
 }
